@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dot Painting</title>
+    <style>
+        .container
+        {
+        background: linear-gradient(110.3deg, rgb(238, 179, 123) 8.7%, rgb(216, 103, 77) 47.5%, rgb(114, 43, 54) 89.1%);
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: cursive;
+            color: #f3bc77;
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-style: italic;
+            font-family: cursive;
+            color: #f3bc77;
+
+        }
+        h3
+        {
+        text-align: center;
+        font-family: cursive;
+        background: #975a5e; 
+        color: #f3cba5;
+        border: 1px #975a5e solid;
+        padding: 20px 15px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        margin: 10px 350px;
+
+        }
+        h4
+        {
+        text-align: center;
+        font-family: cursive;
+        color: #453953;
+        }
+        img {
+        display: block;
+        margin: 0 auto;
+        max-width: 350px;
+
+        }
+
+        a {
+        display: inline;
+        color: #453953;
+        }
+
+        p
+        {
+        font-family: cursive;
+        padding: 20px 15px;
+        margin: 10px 375px;
+        color: #f3cba5;
+        text-align: center;
+        }
+        button
+        {
+        font-family: cursive;
+        color: #de703c;
+        display: block;
+        margin: 0 auto;
+        background-color: #506f86;
+        border: 1px #de703c solid;
+        border-radius: 20px;
+        transition: all 0.3s ease-in-out;
+        margin: 0 auto;
+        padding: 15px 30px 15px 30px;
+        font-size: 14px;
+        }
+
+        button:hover
+        {
+        background-color: #f3cba5;
+        color: #506f86;
+        cursor: pointer;
+        }
+
+        .footer
+        {
+        color: #453953;
+        font-size: 10px
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            dot painting
+        </h1>
+        <h2>
+            made with passion
+        </h2>
+        <h3>
+            Aboriginal Dot Painting
+        </h3>
+        <img src="https://static.shop033.com/resources/1E/1054/Image/MICHELLE%20POSSUM%20NUNGUARRAYI.JPG"    
+        alt="Aboriginal Dot Painting"/>
+        <p>
+            Aboriginal dot painting is a well recognised style used by Australian Aboriginal artists. Emerging in the 1970s, it has become a medium for telling stories and enlivening culture.
+       <br>
+       <br>
+                <a href="https://japingkaaboriginalart.com/articles/aboriginal-dot-painting/" target="_blank" class="learn-more">
+                    Click here
+                </a>
+        to read more about Aboriginal dot painting 
+        <br>
+        or 
+                <a href="https://www.aboriginal-art-australia.com/" target="_blank" class="learn-more">
+                    click here
+                </a>
+        to view more examples from the art gallery.
+        </p>
+
+
+        <br>
+
+
+        <h3>
+            Modern Dot Painting
+        </h3>
+        <h4>
+            Tessa Smits
+        </h4>
+        <img src="https://www.tessasmits.nl/wp-content/uploads/2021/04/abstract-dot-schilderij-FAMILIE-Tessa-Smits-full.jpg"
+            alt="Tessa Smits" />
+
+        <br>
+        <p>
+            Visit Tessa Smits' official web-site
+            <a href="https://www.tessasmits.nl/" target="_blank" class="learn-more">
+                here
+            </a>
+        </p>
+
+        <br>
+        <button class="buy-button">
+            Sign Up
+        </button>
+        <p class="footer">
+            This page was built by Anna Prytysk. GitHub repository <a href="https://github.com/annaprytysk/Anna-Weather-App-Project-Deploy">here</a>
+
+
+        </p>
+    </div>
+
+    <script>
+        function signup() {
+                let name = prompt("What is your name?");
+                let country = prompt("Where are you from?");
+                country = country.toLowerCase().trim();
+
+                if (country === "ukraine") {
+                    alert("Keep calm and paint for VICTORY 💛💙");
+                } else {
+                    alert("Start paiting and don't give up!");
+                }
+            }
+            let applyButton = document.querySelector("button");
+            applyButton.addEventListener("click", signup);
+            
+    </script>
+    
+    
+
+</body>
+
+</html>
